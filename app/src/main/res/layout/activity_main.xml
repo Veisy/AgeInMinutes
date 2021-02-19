@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_100"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_calculateYour"
+        style="@style/text_style_1"
+        android:layout_marginTop="32dp"
+        android:text="@string/calculate_your"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_age"
+        style="@style/text_style_1"
+        android:layout_width="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/orange_300"
+        android:gravity="center_horizontal"
+        android:text="@string/age"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_calculateYour" />
+
+    <TextView
+        android:id="@+id/textView_inDays"
+        style="@style/text_style_1"
+        android:layout_marginTop="8dp"
+        android:text="@string/in_days"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_age" />
+
+
+    <Button
+        android:id="@+id/button_selectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/select_date"
+        android:textColor="@color/orangeToRed_900"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_inDays" />
+
+    <TextView
+        android:id="@+id/textView_selectedDate"
+        style="@style/text_style_1"
+        android:layout_marginTop="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_selectDate" />
+
+    <TextView
+        android:id="@+id/textView_ageInDays"
+        style="@style/text_style_1"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_selectedDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
